@@ -162,7 +162,7 @@ addEventListener('fetch', event => {
         <iframe class="map" src="https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed"></iframe>
       </div>
       <div class="footer">
-        © chatgpt.org.uk All rights reserved | <a href="https://chatgpt.org.uk" target="_blank">https://chatgpt.org.uk</a>
+        © chatgpt.org.uk 2025 All rights reserved | <a href="https://chatgpt.org.uk" target="_blank">https://chatgpt.org.uk</a>
       </div>
       <script>
         function copyToClipboard(text) {
