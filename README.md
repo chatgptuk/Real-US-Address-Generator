@@ -1,6 +1,6 @@
 # Real US and Canadian Address Generator
 
-This is a simple web application that generates random real US addresses, names, genders, and phone numbers. You can also specify a state to generate addresses from that particular state.
+This is a simple web application that generates random real US addresses, names, genders, and phone numbers. You can also specify a state to generate addresses from that particular state. FOR LEGAL PURPOSE ONLY.
 
 ## Features
 
