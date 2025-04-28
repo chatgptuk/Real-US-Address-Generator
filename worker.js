@@ -47,11 +47,11 @@ addEventListener('fetch', event => {
       return new Response('Failed to retrieve detailed address', { status: 500 })
     }
   
-    const userData = await fetch('https://randomuser.me/api/')
-    const userJson = await userData.json()
-    if (userJson && userJson.results && userJson.results.length > 0) {
-      const user = userJson.results[0]
-      name = `${user.name.first} ${user.name.last}`
+    const userResp  = await fetch('https://fakerapi.it/api/v1/persons?_quantity=1&_locale=en_US')
+    const userJson  = await userResp.json()
+    if (userJson && userJson.data && userJson.data.length > 0) {
+      const user = userJson.data[0]
+      name   = `${user.firstname} ${user.lastname}`
       gender = user.gender.charAt(0).toUpperCase() + user.gender.slice(1)
       phone = getRandomPhoneNumber(country, state)
     } else {
